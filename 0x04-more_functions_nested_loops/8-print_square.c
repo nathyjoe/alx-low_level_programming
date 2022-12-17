@@ -2,7 +2,7 @@
 /**
  * print_square - function that prints a sauare
  * @size: size of both width and length
- * Return: square made of 'e'
+ * Return: square made of '#'
  */
 void print_square(int size)
 {
@@ -16,11 +16,11 @@ else
 {
 for (co = 1; co <= size; co++)
 {
-_putchar('e');
+_putchar('#');
 
 for (ro = 2; ro <= size; ro++)
 {
-_putchar('e');
+_putchar('#');
 }
 _putchar('\n');
 }
