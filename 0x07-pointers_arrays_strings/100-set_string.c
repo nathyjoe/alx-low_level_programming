@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * set_strings - set the value of a point to a char
  * @s: source adress.
