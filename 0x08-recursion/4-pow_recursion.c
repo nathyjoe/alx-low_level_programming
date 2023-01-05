@@ -1,27 +1,19 @@
-/*
- * 4-pow_recursion.c
- * Auth: sam
- */
-
 #include "main.h"
 
 /**
- * _pow_recursion - Returns the value x raised to the power of y.
- * @x: The number to be raised.
- * @y: The power.
+ * _pow_recursion - returns the value of x raised to the power of y
+ * @x: number to be raised
+ * @y: raising number
  *
- * Return: The value of x raised to the power of y.
+ * Return: power of a number
  */
 int _pow_recursion(int x, int y)
 {
-	int result = x;
-
 	if (y < 0)
-	{
 		return (-1);
-	}
-
-	else if (y == 0)
-	{
+	if (y == 1)
+		return (x);
+	if (y == 0)
 		return (1);
-	
+	return (x * _pow_recursion(x, (y - 1)));
+}
