@@ -1,18 +1,12 @@
 #include "main.h"
+
 /**
- * print_alphabet - print alphabet lower case
- *
- * Return: Always 0
+ * _islower - check for lower case letter
+ * @c: character to check the case
+ * Return: 0 or 1
  */
 
-void print_alphabet(void)
+int _islower(int c)
 {
-char alphabet;
-
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-_putchar(alphabet);
-}
-_putchar('\n');
-
+	return (c >= 97 && c <= 122);
 }
